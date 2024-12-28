@@ -2,7 +2,7 @@ name: Run Python
 on: 
     push:
     schedule:
-        - cron: 0 0 * * * # utc 格林威治時間
+        - cron: 0 8 * * * # utc 格林威治時間
 
 jobs: 
     build:
@@ -10,6 +10,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - uses: actions/checkout@v2
-        - name: run python
+        - name: run Python
           run:
-            python3 test.py  # test    
+            python3 test_mail.py  # test    

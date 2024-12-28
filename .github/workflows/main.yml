@@ -2,7 +2,7 @@ name: Run Python
 on: 
     push:
     schedule:
-        -cron: 0 0 * * *     # utc 格林威治時間
+        - cron: 0 0 * * * # utc 格林威治時間
 
 jobs: 
     build:
